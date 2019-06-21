@@ -1,0 +1,134 @@
+.seat{
+  display: none;
+
+}
+
+label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  line-height: 50px;
+  cursor: pointer
+  background-color: white;
+  color: white;
+}
+
+#one:checked ~ label[for="one"],
+#two:checked ~ label[for="two"],
+#three:checked ~ label[for="three"],
+#four:checked ~ label[for="four"],
+#five:checked ~ label[for="five"], 
+#six:checked ~ label[for="six"],
+#seven:checked ~ label[for="seven"],
+#eight:checked ~ label[for="eight"],
+#nine:checked ~ label[for="nine"],
+#ten:checked ~ label[for="ten"],
+#eleven:checked ~ label[for="eleven"],
+#twelve:checked ~ label[for="twelve"],
+#thirteen:checked ~ label[for="thirteen"],
+#fourteen:checked ~ label[for="fourteen"], 
+#fiveteen:checked ~ label[for="fiveteen"],
+#sixteen:checked ~ label[for="sixteen"],
+#seventeen:checked ~ label[for="seventeen"],
+#eighteen:checked ~ label[for="eighteen"],
+#nineteen:checked ~ label[for="nineteen"],
+#twenty:checked ~ label[for="twenty"],
+#twenty1:checked ~ label[for="twenty1"],
+#twenty2:checked ~ label[for="twenty2"],
+#twenty3:checked ~ label[for="twenty3"],
+#twenty4:checked ~ label[for="twenty4"],
+#twenty5:checked ~ label[for="twenty5"],
+#twenty6:checked ~ label[for="twenty6"], 
+#twenty7:checked ~ label[for="twenty7"],
+#twenty8:checked ~ label[for="twenty8"],
+#twenty9:checked ~ label[for="twenty9"],
+#thirty:checked ~ label[for="thirty"],
+#thirty1:checked ~ label[for="thirty1"],
+#thirty2:checked ~ label[for="thirty2"],
+#thirty3:checked ~ label[for="thirty3"],
+#thirty4:checked ~ label[for="thirty4"],
+#thirty5:checked ~ label[for="thirty5"],
+#thirty6:checked ~ label[for="thirty6"],
+#thirty7:checked ~ label[for="thirty7"],
+#thirty8:checked ~ label[for="thirty8"],
+#thirty9:checked ~ label[for="thirty9"],
+#fourty:checked ~ label[for="fourty"],
+#fourty1:checked ~ label[for="fourty1"],
+#fourty2:checked ~ label[for="fourty2"],
+#fourty3:checked ~ label[for="fourty3"],
+#fourty4:checked ~ label[for="fourty4"],
+#fourty5:checked ~ label[for="fourty5"],
+#fourty6:checked ~ label[for="fourty6"],
+#fourty7:checked ~ label[for="fourty7"],
+#fourty8:checked ~ label[for="fourty8"],
+#fourty9:checked ~ label[for="fourty9"],
+#fifty:checked ~ label[for="fifty"]{
+  background: #68d16e;
+  color: #ffffff;
+}
+
+.submit{
+    background-color: #33cc33;
+    width: 455px;
+    border: none;
+    margin-top: 10px;
+    height: 45px;
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 20px;
+}
+
+.column {
+    float: left;
+}
+
+.left, .right {
+    width: 25%;
+}
+
+.middle {
+    width: 50%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#blank{
+    color: transparent;
+}
+
+#booking{
+  background-color: black;
+}
+
+body{
+    background-image: url(./pictures/background.jpg);
+    background-attachment: fixed;
+}
+
+.white{
+  color: white;
+  margin-bottom: 0px;
+}
+
+#time{
+  background-color: #828282;
+  width: 100px;
+  border-radius: 30px; 
+}
+
+#title{
+    color: red;
+    font-size: 50px;
+}
+
+legend{
+  color: white;
+  font-size: 22px;
+}
+
+fieldset{
+  width: 40%;
+  color: white;
+  font-size: 22px;
+}

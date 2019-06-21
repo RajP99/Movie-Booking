@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="booking.css" type="text/css">
+  <script type="text/javascript" src="seats.js"></script>
+</head>
+
+<body>
+  <div class="row">
+    <div class="column left">
+      <p id="blank">hey</p>
+    </div>
+    <div class="column middle">
+      <center>
+        <h1 id="title">Seat Booking</h1>
+
+        <h2 class="white">Select Showtime:</h2>
+        
+
+        <br>
+        <form id="seatForm" action="seats.php" method="POST">
+
+         <fieldset id="time">
+          <input type="radio" name="showtime" value="6:30">6:30 PM <br>
+          <input type="radio" name="showtime" value="9:30">9:30 PM <br>
+        </fieldset>
+
+        <table id="booking">
+          <tr>
+            <td>
+              <input type="checkbox" id="one" class="seat" value="1" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="two" class="seat" value="2" name="seat[]" onclick="calculateTotal()">
+
+              <label for="one">1</label>
+              <label for="two">2</label>
+            </td>  <br>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td>
+              <input type="checkbox" id="three" class="seat" value="3" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="four" class="seat" value="4" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="five" class="seat" value="5" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="six" class="seat" value="6" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="seven" class="seat" value="7" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="eight" class="seat" value="8" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="nine" class="seat" value="9" name="seat[]" onclick="calculateTotal()">
+
+              <label for="three">3</label>
+              <label for="four">4</label>
+              <label for="five">5</label>
+              <label for="six">6</label>
+              <label for="seven">7</label>
+              <label for="eight">8</label>
+              <label for="nine">9</label>
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td>
+              <input type="checkbox" id="ten" class="seat" value="10" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="eleven" class="seat" value="11" name="seat[]" onclick="calculateTotal()">
+
+              <label for="ten">10</label>
+              <label for="eleven">11</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" id="twelve" class="seat" value="12" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="thirteen" class="seat" value="13" name="seat[]" onclick="calculateTotal()">
+
+              <label for="twelve">12</label>
+              <label for="thirteen">13</label>
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td>
+              <input type="checkbox" id="fourteen" class="seat" value="14" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fiveteen" class="seat" value="15" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="sixteen" class="seat" value="16" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="seventeen" class="seat" value="17" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="eighteen" class="seat" value="18" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="nineteen" class="seat" value="19" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="twenty" class="seat" value="20" name="seat[]" onclick="calculateTotal()">
+
+              <label for="fourteen">14</label>
+              <label for="fiveteen">15</label>
+              <label for="sixteen">16</label>
+              <label for="seventeen">17</label>
+              <label for="eighteen">18</label>
+              <label for="nineteen">19</label>
+              <label for="twenty">20</label>
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td>
+              <input type="checkbox" id="twenty1" class="seat" value="21" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="twenty2" class="seat" value="22" name="seat[]" onclick="calculateTotal()">
+
+              <label for="twenty1">21</label>
+              <label for="twenty2">22</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" id="twenty3" class="seat" value="23" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="twenty4" class="seat" value="24" name="seat[]" onclick="calculateTotal()">
+
+              <label for="twenty3">23</label>
+              <label for="twenty4">24</label>
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td>
+              <input type="checkbox" id="twenty5" class="seat" value="25" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="twenty6" class="seat" value="26" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="twenty7" class="seat" value="27" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="twenty8" class="seat" value="28" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="twenty9" class="seat" value="29" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="thirty" class="seat" value="30" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="thirty1" class="seat" value="31" name="seat[]" onclick="calculateTotal()">
+
+              <label for="twenty5">25</label>
+              <label for="twenty6">26</label>
+              <label for="twenty7">27</label>
+              <label for="twenty8">28</label>
+              <label for="twenty9">29</label>
+              <label for="thirty">30</label>
+              <label for="thirty1">31</label>
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td>
+              <input type="checkbox" id="thirty2" class="seat" value="32" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="thirty3" class="seat" value="33" name="seat[]" onclick="calculateTotal()">
+
+              <label for="thirty2">32</label>
+              <label for="thirty3">33</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" class="seat">
+              <input type="checkbox" class="seat">
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td>
+              <input type="checkbox" id="thirty4" class="seat" value="34" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="thirty5" class="seat" value="35" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="thirty6" class="seat" value="36" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="thirty7" class="seat" value="37" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="thirty8" class="seat" value="38" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="thirty9" class="seat" value="39" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fourty" class="seat" value="40" name="seat[]" onclick="calculateTotal()">
+
+              <label for="thirty4">34</label>
+              <label for="thirty5">35</label>
+              <label for="thirty6">36</label>
+              <label for="thirty7">37</label>
+              <label for="thirty8">38</label>
+              <label for="thirty9">39</label>
+              <label for="fourty">40</label>
+            </td>
+
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+
+            <td>
+              <input type="checkbox" class="seat">
+              <input type="checkbox" class="seat">
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="10">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="checkbox" id="fourty1" class="seat" value="41" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fourty2" class="seat" value="42" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fourty3" class="seat" value="43" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fourty4" class="seat" value="44" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fourty5" class="seat" value="45" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fourty6" class="seat" value="46" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fourty7" class="seat" value="47" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fourty8" class="seat" value="48" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fourty9" class="seat" value="49" name="seat[]" onclick="calculateTotal()">
+              <input type="checkbox" id="fifty" class="seat" value="50" name="seat[]" onclick="calculateTotal()">
+
+              <label for="fourty1">41</label>
+              <label for="fourty2">42</label>
+              <label for="fourty3">43</label>
+              <label for="fourty4">44</label>
+              <label for="fourty5">45</label>
+              <label for="fourty6">46</label>
+              <label for="fourty7">47</label>
+              <label for="fourty8">48</label>
+              <label for="fourty9">49</label>
+              <label for="fifty">50</label>
+            </td>
+          </tr>
+
+          <tr>
+           <td colspan="10">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Proceed to checkout" class="submit">
+          </td>
+        </tr>
+      </table>
+
+      <fieldset>
+      <legend>
+        Pricing Info
+      </legend>
+      <div id="noTax"></div>
+      <div id="withTax"></div>            
+    </fieldset>
+      <br>  
+    </form>
+  </center>
+</div>
+<div class="column right">
+  <p id="blank">hey</p>
+</div>
+</div>
+
+</body>
+</html>

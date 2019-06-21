@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="Style.css" type="text/css">
+</head>
+<body>
+		
+
+	<div class="row">
+		<div class="column left">
+			<p id="blank">Hey</p>
+			
+		</div>
+		<div class="column middle">
+			<h1 id="title">ONTechU CINEMAS</h1>
+			<img src="./pictures/logo.png" align="right">  <br><br><br><br><br><br>
+			<!--Navigation Bar-->
+			<ul>
+			  <li><a href="HomePage.html">Home</a></li>
+			  <li><a href="Pricing.html">Pricing</a></li>
+			  <li><a href="Contact.html">Contact</a></li>
+			</ul>
+
+			<div>
+				<table style="font-size: 18px; color: white;" cellpadding="10">
+					<tr>
+						<td>
+							Founders: 
+						</td>
+						<td>
+							Raj Parikh, Anuj Patel, Vraj Shah
+						</td>
+						<td>
+							If there's any problem please free to contact us through any of these options provided. We will respond as soon as possible. Otherwise enjoy the movies and don't forget to follow us on any social media to get the latest updates.
+					</tr>
+					<tr>
+						<td>
+							About Us:
+						</td>
+						<td>
+							Email: movie@cinema.com<br>
+							P: 647-852-1489<br>
+							F: 905-897-3612<br>
+							2000 Simcoe St N, Oshawa, ON L1G 0C5
+						</td>
+						<td>
+							<center>
+								<a href="https://twitter.com/UOIT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./pictures/twitter.png"></a> <a href="https://www.facebook.com/myuoit/"><img src="./pictures/facebook.png"></a> <a href="https://www.instagram.com/uoit/?hl=en"><img src="./pictures/instagram.png"></a>
+							</center>
+						</td>
+					</tr>
+					
+				</table>
+			</div>
+			<center>
+				<div id="map" style="width:100%;height:500px">
+	  				<script>
+	  					function initMap() {
+	    					var location = {lat: 43.945429, lng: -78.895695};
+	    					
+							var map = new google.maps.Map(document.getElementById("map"), {
+								zoom: 15,
+								center: location
+							});
+
+							var marker = new google.maps.Marker({
+								position: location,
+								map: map
+							});
+						}	
+	  				</script>
+	  				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJZeTZuxFrujQeKhd7h5XyqiqL_ndg15A&callback=initMap" /><br/></script>
+	  			</div>	
+			</center>
+		</div>
+		<div class="column right">
+			<p id="blank">Hey</p>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
