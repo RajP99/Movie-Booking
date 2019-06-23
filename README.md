@@ -1,5 +1,5 @@
 # Movie-Booking
-Movie theatre booking website
+Movie theatre booking website - Raj Parikh, Anuj Patel, Vraj Shah
 
 ***DATABASE INFORMATION***
 Create a database called "theatre", 
